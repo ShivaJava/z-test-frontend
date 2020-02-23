@@ -1,3 +1,11 @@
 <div>
-    list
+    <div class="row">
+        <Search/>
+    </div>
+    <div class="row">
+        <NewsItem
+            v-for="newsItem in news"
+            v-bind:news-item="newsItem"
+            v-bind:key="newsItem.id"/>
+    </div>
 </div>
